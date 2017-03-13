@@ -1,0 +1,59 @@
+   51  git clone https://github.com/eloygm/umafactorial.git
+   52  cd umafactorial/
+   53  ls
+   54  git config user.name eloygm
+   55  git config user.email eloygm.92@uma.es
+   56  gedit factorial.java
+   57  git add factorial.java 
+   58  git commit -m "implementacion inicial"
+   59  gedit factorial.java
+   60  git commit -m "refactorizacion"
+   61  gedit factorial.java
+   62  git add factorial.java 
+   63  git commit -m "refactorizacion"
+   64  git status
+   65  gitk --all
+   66  git push origin master
+   67  git checkout -b recursivo
+   68  ls
+   69  ls -la
+   70  gedit factorial.java &
+   71  git add factorial.java 
+   72  git commit -m "implementacion recursiva"
+   73  git status
+   74  git push origin recursivo
+   75  git checkout master
+   76  gedit factorial.java &
+   77  git add factorial.java 
+   78  git commit -m "correccion numeros negativos"
+   79  git push origin master
+   80  git checkout recursivo 
+   81  gedit factorial.java 
+   82  git add factorial.java 
+   83  git commit -m "optimizacion"
+   84  git checkout master
+   85  git merge recursivo 
+   86  git checkout -b refacIO
+   88  git status
+   89  gedit factorial.java &
+   90  git add factorial.java 
+   91  git commit -m "refactorizacion de metodo de entrada"
+   92  gedit factorial.java &
+   93  git stash
+   94  git checkout master
+   95  gedit factorial.java 
+   96  git add factorial.java 
+   97  git commit -m "cambio de long a BigInteger"
+   98  git push origin master
+   99  git checkout refacIO 
+  100  git stash pop
+  101  git commit -m "refactorizacion de metodo de salida"
+  102  git add factorial.java 
+  103  git commit -m "refactorizacion de metodo de salida"
+  104  git checkout master
+  105  git merge refacIO 
+  106  gedit factorial.java 
+  107  git add factorial.java 
+  108  git commit -m "mezcla de rama refacIO"
+  109  git push origin master 
+  110  gedit comandos-git.txt
